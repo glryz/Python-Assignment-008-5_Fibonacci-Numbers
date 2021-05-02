@@ -1,0 +1,12 @@
+# Create a list consisting of Fibonacci numbers from 1 to 55 using control flow statements.
+
+# desired output is like = fibonacci →  [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+a, b = 1, 1  
+fiblist = [a, b]    # fibonacci sayıları 1, 1 ile başlar.
+for i in range(8) :
+    a, b = b, a+b   # her defasında önceki iki sayının toplamı olan b, fibonacci dizisindeki sayıları temsil ediyor.  
+                    # a'yı her defasında b'nin önceki haline eşitliyoruz ki b'den önceki iki sayıya ulaşabilelim.
+
+    fiblist.append(b) 
+print(fiblist)    
